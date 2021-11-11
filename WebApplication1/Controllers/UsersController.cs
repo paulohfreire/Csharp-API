@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
     [Route("api/[controller]")]
     [ApiController]
         public class UsersController : ControllerBase
-    {
+        {
 
         private IUserService _service;
 
