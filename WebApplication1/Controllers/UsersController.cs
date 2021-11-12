@@ -1,4 +1,4 @@
-﻿using Api.Domain.Entities;
+﻿using Api.Domain.Dtos.User;
 using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,9 +12,7 @@ namespace WebApplication1.Controllers
     [ApiController]
         public class UsersController : ControllerBase
         {
-
-        private IUserService _service;
-
+        public IUserService _service { get; set; }
         public UsersController(IUserService service)
         {
             _service = service;
@@ -22,7 +20,7 @@ namespace WebApplication1.Controllers
 
         [Authorize("Bearer")]
         [HttpGet]
-        public async Task<ActionResult> GetAll([FromServices] IUserService service)
+        public async Task<ActionResult> GetAll()
         {
             if (!ModelState.IsValid)
             {
@@ -61,7 +59,7 @@ namespace WebApplication1.Controllers
 
         [Authorize("Bearer")]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserEntity user)
+        public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
         {
             //sempre colocar essa validação nos métodos
             if (!ModelState.IsValid)
@@ -88,7 +86,7 @@ namespace WebApplication1.Controllers
 
         [Authorize("Bearer")]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserEntity user)
+        public async Task<ActionResult> Put([FromBody] UserDtoUpdate user)
         {
             if (!ModelState.IsValid)
             {
