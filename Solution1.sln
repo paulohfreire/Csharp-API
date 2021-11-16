@@ -13,20 +13,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCuttin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{3D6465CA-23D3-44F2-903D-D379B61CD5F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{9D31E26B-14CB-45AE-B4B4-3675C46E983C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{9D31E26B-14CB-45AE-B4B4-3675C46E983C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4139C9C6-A7A6-48FF-9D75-903310BAD475} = {4139C9C6-A7A6-48FF-9D75-903310BAD475}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Domain", "Api.Domain\Api.Domain.csproj", "{B53C98DD-3657-40B7-8143-E71860F9D080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Domain", "Api.Domain\Api.Domain.csproj", "{B53C98DD-3657-40B7-8143-E71860F9D080}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Data", "Api.Data\Api.Data.csproj", "{A1EC7DA2-2BDB-4EC9-9D00-C8CAE2BC4846}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Data", "Api.Data\Api.Data.csproj", "{A1EC7DA2-2BDB-4EC9-9D00-C8CAE2BC4846}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.CrossCutting", "Api.CrossCutting\Api.CrossCutting.csproj", "{723FFEF0-782F-43FC-A92F-8DA2BDCE884D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.CrossCutting", "Api.CrossCutting\Api.CrossCutting.csproj", "{723FFEF0-782F-43FC-A92F-8DA2BDCE884D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Service", "Api.Service\Api.Service.csproj", "{4139C9C6-A7A6-48FF-9D75-903310BAD475}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Service", "Api.Service\Api.Service.csproj", "{4139C9C6-A7A6-48FF-9D75-903310BAD475}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Data.Test", "Api.Data.Test\Api.Data.Test.csproj", "{794AF067-E865-490E-9EEF-737DA5DF3F1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Data.Test", "Api.Data.Test\Api.Data.Test.csproj", "{794AF067-E865-490E-9EEF-737DA5DF3F1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Service.Test", "Api.Service.Test\Api.Service.Test.csproj", "{520BE38D-8660-4291-9945-C8EBF740616F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,10 @@ Global
 		{794AF067-E865-490E-9EEF-737DA5DF3F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{794AF067-E865-490E-9EEF-737DA5DF3F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{794AF067-E865-490E-9EEF-737DA5DF3F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520BE38D-8660-4291-9945-C8EBF740616F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520BE38D-8660-4291-9945-C8EBF740616F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520BE38D-8660-4291-9945-C8EBF740616F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520BE38D-8660-4291-9945-C8EBF740616F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
