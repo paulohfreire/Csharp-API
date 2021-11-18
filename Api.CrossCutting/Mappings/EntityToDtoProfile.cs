@@ -9,7 +9,7 @@ namespace Api.CrossCutting.Mappings
         public EntityToDtoProfile()
         {
             //Transforma  Dto para model e model para dto
-            CreateMap<UserDtoCreate, UserEntity>().ReverseMap();
+            CreateMap<UserDto, UserEntity>().ReverseMap();
 
             CreateMap<UserDtoCreateResult, UserEntity>().ReverseMap();
 
