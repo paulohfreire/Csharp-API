@@ -30,7 +30,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Data.Test", "Api.Data.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Service.Test", "Api.Service.Test\Api.Service.Test.csproj", "{520BE38D-8660-4291-9945-C8EBF740616F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Application.Test", "Api.Application.Test\Api.Application.Test.csproj", "{50DF4D88-6322-4753-9A6A-4053BDD5AEED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Application.Test", "Api.Application.Test\Api.Application.Test.csproj", "{50DF4D88-6322-4753-9A6A-4053BDD5AEED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Integration.Test", "Api.Integration.Test\Api.Integration.Test.csproj", "{3034276C-B198-41C2-89ED-7A0AFEFF1A05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +72,10 @@ Global
 		{50DF4D88-6322-4753-9A6A-4053BDD5AEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50DF4D88-6322-4753-9A6A-4053BDD5AEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50DF4D88-6322-4753-9A6A-4053BDD5AEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3034276C-B198-41C2-89ED-7A0AFEFF1A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3034276C-B198-41C2-89ED-7A0AFEFF1A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3034276C-B198-41C2-89ED-7A0AFEFF1A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3034276C-B198-41C2-89ED-7A0AFEFF1A05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

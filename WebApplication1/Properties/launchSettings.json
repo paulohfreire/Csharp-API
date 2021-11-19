@@ -20,6 +20,7 @@
         "MIGRATION": "APLICAR"
       }
     },
+    
     "WebApplication1": {
       "commandName": "Project",
       "launchBrowser": true,
