@@ -5,7 +5,7 @@ using Api.Domain.Repository;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
-namespace Api.Data.Implementations
+namespace Api.Data.Implementation
 {
     public class CepImplementation : BaseRepository<CepEntity>, ICepRepository
     {
