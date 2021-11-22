@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Api.Domain.Models
 {
-    class UfModel : BaseModel
+    public class UfModel : BaseModel
     {
         private string _sigla;
 

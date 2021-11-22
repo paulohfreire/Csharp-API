@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Api.Domain.Models
 {
-    public class CepModel
+    public class CepModel : BaseModel
     {
         private string _cep;
 

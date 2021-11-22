@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Api.Domain.Dtos.Municipio
 {
-    class MunicipioDtoUpdateResult
+    public class MunicipioDtoUpdateResult
     {
         public Guid Id { get; set; }
         public string Nome { get; set; }

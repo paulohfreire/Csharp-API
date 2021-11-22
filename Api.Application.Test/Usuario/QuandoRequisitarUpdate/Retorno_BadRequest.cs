@@ -3,8 +3,6 @@ using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using WebApplication1.Controllers;
 using Xunit;
@@ -15,7 +13,7 @@ namespace Api.Application.Test.Usuario.QuandoRequisitarUpdate
     {
         private UsersController _controller;
 
-        [Fact(DisplayName = "É possível Realizar o Updated.")]
+        [Fact(DisplayName = "É possível Realizar o Update.")]
         public async Task E_Possivel_Invocar_a_Controller_Update()
         {
             var serviceMock = new Mock<IUserService>();

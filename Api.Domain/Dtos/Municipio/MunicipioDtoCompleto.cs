@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Api.Domain.Dtos.Uf;
+using System;
 
-namespace Api.Domain.Dtos.Uf
+namespace Api.Domain.Dtos.Municipio
 {
     public class MunicipioDtoCompleto
     {

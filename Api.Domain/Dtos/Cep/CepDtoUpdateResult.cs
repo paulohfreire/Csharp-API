@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Api.Domain.Dtos.Cep
 {
-    class CepDtoUpdateResult
+    public class CepDtoUpdateResult
     {
         public Guid Id { get; set; }
         public string Cep { get; set; }
