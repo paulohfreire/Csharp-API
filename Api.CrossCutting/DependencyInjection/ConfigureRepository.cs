@@ -5,6 +5,7 @@ using Api.Domain.Interfaces;
 using Api.Domain.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Api.CrossCutting.DependencyInjection
 {
@@ -19,8 +20,18 @@ namespace Api.CrossCutting.DependencyInjection
             serviceCollection.AddScoped<IMunicipioRepository, MunicipioImplementation>();
             serviceCollection.AddScoped<ICepRepository, CepImplementation>();
 
-            serviceCollection.AddDbContext<MyContext>(
-                    options => options.UseMySql("Server=localhost;Port=3306;Database=dbAPI;Uid=root;Pwd=admin"));
+            if (Environment.GetEnvironmentVariable("DATABASE").ToLower() == "SQLSERVER".ToLower())
+            {
+                serviceCollection.AddDbContext<MyContext>(
+                    options => options.UseSqlServer(Environment.GetEnvironmentVariable("DB_CONNECTION"))
+                );
+            }
+            else
+            {
+                serviceCollection.AddDbContext<MyContext>(
+                    options => options.UseMySql(Environment.GetEnvironmentVariable("DB_CONNECTION"))
+                );
+            }
         }
     }
 }

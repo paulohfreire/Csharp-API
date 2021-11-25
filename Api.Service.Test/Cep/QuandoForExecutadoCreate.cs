@@ -1,6 +1,4 @@
-﻿using Api.Domain.Dtos.Cep;
-using Api.Domain.Interfaces.Services.Cep;
-using Api.Domain.Interfaces.Services.Municipio;
+﻿using Api.Domain.Interfaces.Services.Cep;
 using Moq;
 using System.Threading.Tasks;
 using Xunit;

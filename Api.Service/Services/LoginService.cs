@@ -20,8 +20,7 @@ namespace Api.Service
         private IConfiguration _configuration { get; }
 
         public LoginService(IUserRepository repository, 
-            SigninConfigurations signinConfigurations, 
-            
+            SigninConfigurations signinConfigurations,
             IConfiguration configuration)
         {
             _repository = repository;
@@ -54,8 +53,8 @@ namespace Api.Service
                         }
                     );
 
-                    DateTime createDate = DateTime.Now;
-                    DateTime expirationDate = createDate + TimeSpan.FromSeconds(Convert.ToInt32(Environment.GetEnvironmentVariable("Seconds")));
+                    DateTime createDate = DateTime.UtcNow;
+                    DateTime expirationDate = createDate + TimeSpan.FromSeconds(2400);
 
                     var handler = new JwtSecurityTokenHandler();
                     string token = CreateToken(identity, createDate, expirationDate, handler);
@@ -76,7 +75,7 @@ namespace Api.Service
                 Audience = Environment.GetEnvironmentVariable("Audience"),
                 SigningCredentials = _signinConfigurations.SigningCredentials,
                 Subject = identity,
-                NotBefore = createDate,
+                NotBefore = DateTime.Now,
                 Expires = expirationDate,
             });
 

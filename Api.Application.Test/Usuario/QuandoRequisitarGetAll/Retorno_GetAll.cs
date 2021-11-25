@@ -16,8 +16,8 @@ namespace Api.Application.Test.Usuario.QuandoRequisitarGetAll
     {
         private UsersController _controller;
 
-        [Fact(DisplayName = "É possível Realizar o Get.")]
-        public async Task E_Possivel_Invocar_a_Controller_Get()
+        [Fact(DisplayName = "É possível Realizar o Get All.")]
+        public async Task E_Possivel_Invocar_a_Controller_GetAll()
         {
             var serviceMock = new Mock<IUserService>();
   
@@ -30,6 +30,13 @@ namespace Api.Application.Test.Usuario.QuandoRequisitarGetAll
                          Name = Faker.Name.FullName(),
                          Email = Faker.Internet.Email(),
                          CreateAt = DateTime.UtcNow
+                    },
+                     new UserDto
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = Faker.Name.FullName(),
+                        Email = Faker.Internet.Email(),
+                        CreateAt = DateTime.UtcNow
                     }
                  }
             );

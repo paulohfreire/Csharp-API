@@ -40,7 +40,7 @@ namespace WebApplication1
                 Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
                 Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
                 Environment.SetEnvironmentVariable("Issuer", "ExemploIssue");
-                Environment.SetEnvironmentVariable("Seconds", "28800");
+                Environment.SetEnvironmentVariable("Seconds", "240");
             }
             services.AddControllers();
 

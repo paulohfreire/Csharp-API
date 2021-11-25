@@ -1,7 +1,5 @@
 ﻿using Api.Domain.Dtos.Cep;
-using Api.Domain.Dtos.Municipio;
 using Api.Domain.Interfaces.Services.Cep;
-using Api.Domain.Interfaces.Services.Municipio;
 using Moq;
 using System;
 using System.Threading.Tasks;

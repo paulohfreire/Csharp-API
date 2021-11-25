@@ -3,8 +3,6 @@ using Api.Data.Seeds;
 using Api.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Api.Data.Context
 {
@@ -30,8 +28,8 @@ namespace Api.Data.Context
                     Id = Guid.NewGuid(),
                     Name = "Administrador",
                     Email = "paulo@mail.com",
-                    CreateAt = DateTime.Now,
-                    UpdateAt = DateTime.Now,
+                    CreateAt = DateTime.UtcNow,
+                    UpdateAt = DateTime.UtcNow,
                 }
             );
 
